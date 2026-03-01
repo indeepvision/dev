@@ -1,0 +1,306 @@
+{
+    "header": {
+        "author": "Carlos Palou",
+        "description": "",
+        "projectName": "tadesan_defectes_injeccio",
+        "creationDate": 1770128170681,
+        "configKey": "5d2514d6-6378-4ace-bd68-6e74f6a5964d"
+    },
+    "brains": {
+        "brainsConfig": [
+            {
+                "brainId": "4fe24dad-9a9f-4324-9f7c-ca4c283372a1",
+                "deviceSelection": 1,
+                "critical": true,
+                "disabled": false,
+                "friendlyName": "top_defects_detection",
+                "gpuDeviceUuid": 0,
+                "model": "Head_Defects_Cam3",
+                "version": 7,
+                "configKey": "8468bb1a-55d4-4936-b266-99a7b2d331c7"
+            },
+            {
+                "brainId": "99beba19-4adb-4aa0-9c59-58fb7434c343",
+                "deviceSelection": 1,
+                "critical": true,
+                "disabled": false,
+                "friendlyName": "bottom_defects_detection",
+                "gpuDeviceUuid": 0,
+                "model": "Bottom_Defects_Cam3",
+                "version": 16,
+                "configKey": "656bcc6c-8475-4565-9a2b-be1dfca05239"
+            }
+        ]
+    },
+    "cameras": {
+        "camerasConfig": [
+            {
+                "camId": "a076405c-0fd4-4bfa-a553-53fa43ff000b",
+                "controllerType": "GenTL",
+                "producer": "Basler (ProducerGEV.cti)",
+                "serial": "",
+                "deviceInfo": {
+                    "vendor": "Basler",
+                    "model": "",
+                    "deviceScanTypeStr": "Unknown",
+                    "transportLayerStr": "Gige"
+                },
+                "controller": {
+                    "friendlyName": "camera1",
+                    "rotationStr": "0",
+                    "flipStr": "None",
+                    "components": [
+                        {
+                            "componentName": "Intensity",
+                            "pixelFormatStr": "Mono8",
+                            "hasUserValue": false
+                        }
+                    ],
+                    "imageBufferSize": 60,
+                    "bufferAutoRelease": true,
+                    "logLevelStr": "INFO"
+                },
+                "critical": false,
+                "disabled": false,
+                "configKey": "d92b7d73-bea3-44af-91d4-44bbbdc16ff3"
+            }
+        ]
+    },
+    "visu": {
+        "layout": {
+            "data": {
+                "bb75c798-717c-4f1b-a640-2edb2432ccd1": {
+                    "elements": {
+                        "92baadc6-f9a5-4770-80da-6b752db67677": {
+                            "id": "92baadc6-f9a5-4770-80da-6b752db67677",
+                            "friendlyName": "IDVisionLogo",
+                            "type": "StaticImage",
+                            "position": {
+                                "top": "889px",
+                                "left": "1207px",
+                                "height": "57px",
+                                "width": "399px",
+                                "hidden": false,
+                                "ratioLocked": true
+                            },
+                            "config": {
+                                "clickable": true,
+                                "disabled": false,
+                                "userLevel": "None",
+                                "disableBelowUserLevel": false
+                            },
+                            "style": {
+                                "borderColor": "#14171a",
+                                "borderWidth": 0,
+                                "borderRadius": 0,
+                                "backgroundColor": "#ffffff",
+                                "iconColor": "#aab8c2"
+                            }
+                        },
+                        "cacfaabe-d92e-4991-aedd-081e25d80cfa": {
+                            "id": "cacfaabe-d92e-4991-aedd-081e25d80cfa",
+                            "friendlyName": "display",
+                            "type": "Display",
+                            "position": {
+                                "top": "32px",
+                                "left": "33px",
+                                "height": "805px",
+                                "width": "1573px",
+                                "hidden": false,
+                                "ratioLocked": false
+                            },
+                            "config": {
+                                "enableDisplay2dMode": true,
+                                "numHistoryElements": 30
+                            },
+                            "style": {
+                                "borderColor": "#0000001F",
+                                "borderRadius": 10,
+                                "borderWidth": 0,
+                                "backgroundColor": "#DADADA",
+                                "iconColor": "#FFFFFF"
+                            }
+                        }
+                    },
+                    "layers": [
+                        "cacfaabe-d92e-4991-aedd-081e25d80cfa",
+                        "92baadc6-f9a5-4770-80da-6b752db67677"
+                    ]
+                }
+            },
+            "pages": [
+                {
+                    "id": "bb75c798-717c-4f1b-a640-2edb2432ccd1",
+                    "friendlyName": "production"
+                }
+            ],
+            "settings": {
+                "screenSize": {
+                    "width": 1638,
+                    "height": 990
+                },
+                "backgroundColor": "#f0f0f0",
+                "units": "pixels",
+                "sidePanelMode": "fixed"
+            },
+            "functions": [],
+            "variables": [
+                "DEBUG",
+                "DEBUG_IMAGES_CYCLE_TIME",
+                "DEBUG_IMAGES_DIR",
+                "BLUR",
+                "BLUR_INTENSITY",
+                "PX_MM_RATIO",
+                "MM_PX_RATIO",
+                "LOGO_IDVISION_PATH",
+                "LOGO_CLIENT",
+                "COLOR_RED_HEX",
+                "COLOR_SOFT_RED_HEX",
+                "COLOR_GREEN_HEX",
+                "COLOR_SOFT_GREEN_HEX",
+                "COLOR_ORANGE_HEX",
+                "COLOR_SOFT_ORANGE_HEX",
+                "COLOR_YELLOW_HEX",
+                "COLOR_SOFT_YELLOW_HEX",
+                "COLOR_BLUE_HEX",
+                "COLOR_SOFT_BLUE_HEX",
+                "COLOR_VIOLET_HEX",
+                "COLOR_TURQUOISE_HEX",
+                "COLOR_WHITE_HEX",
+                "COLOR_GRAY_HEX",
+                "COLOR_BLACK_HEX",
+                "showSegmentations",
+                "showContours",
+                "cam1TopDebugFolderIndex",
+                "cam1TopDebugImageIndex",
+                "cam1BottomDebugFolderIndex",
+                "cam1BottomDebugImageIndex",
+                "cam2ProfileDebugFolderIndex",
+                "cam2ProfileDebugImageIndex",
+                "cam2HoleDebugFolderIndex",
+                "cam2HoleDebugImageIndex"
+            ]
+        },
+        "configKey": "d3829bb0-c810-438c-bb97-8ec2d7ef5cfa"
+    },
+    "internal": {
+        "softwareVersion": [
+            11,
+            6,
+            5
+        ],
+        "lastModified": 1770132681555,
+        "configKey": "a9824859-c7c3-4923-9a98-97716c62b953",
+        "originalVersion": [
+            11,
+            5,
+            16
+        ]
+    },
+    "runtime": {
+        "sequences": [
+            {
+                "id": "32664c1d-4b79-4f5d-95f8-8c7a7581245f",
+                "name": "config",
+                "type": "INIT",
+                "code": "//\r\n// STRICTLY CONFIDENTIAL\r\n// Copyright 2026 ID Vision Software SL. All Rights Reserved.\r\n//\r\n\r\n\r\n//////////////////////////////////////////////////////////\r\n// Aquest script conté constants com paths o dimensions //\r\n//////////////////////////////////////////////////////////\r\n\r\n\r\n//\r\n// Paràmetres de debug\r\n//\r\n\r\n/** Mode debug, carrega imatges del disk i no captura amb la càmera */ \r\nconst global var DEBUG: boolean = true;\r\n/** Temps entre imatges de debug */\r\nconst global var DEBUG_IMAGES_CYCLE_TIME = 1000;\r\n\r\n/** Carpeta amb les imatges de debug */\r\nconst global var DEBUG_IMAGES_DIR: string = \"\";\r\n\r\n/** Mode de funcionament en el que no es processen les imatges */\r\nconst global var ONLY_CAPTURE_IMAGES: boolean = true;\r\n\r\n\r\n//\r\n// Paràmetres de processament\r\n//\r\n\r\n/** Pixels to mm ratio */\r\nconst global var PX_MM_RATIO: number = 1;\r\n/** Mm to pixels ratio */\r\nconst global var MM_PX_RATIO: number = 1;\r\n\r\n/** Amplada de la imatge sobre la que es fa la inferència */\r\nconst global var BRAIN_IMAGE_WIDTH: number = 1;\r\n/** Alçada de la imatge sobre la que es fa la inferència */\r\nconst global var BRAIN_IMAGE_HEIGHT: number = 1;\r\n\r\n\r\n//\r\n// Paràmetres de visualització\r\n//\r\n\r\n\r\n// Logos\r\nconst global var LOGO_IDVISION_PATH: string = \"\";\r\nconst global var LOGO_CLIENT: string = \"\";\r\n\r\n// Colors\r\nconst global var COLOR_RED_HEX: string = \"#ff1d1e\";\r\nconst global var COLOR_SOFT_RED_HEX: string = \"#c13c3d\";\r\nconst global var COLOR_GREEN_HEX: string = \"#49cc00\";\r\nconst global var COLOR_SOFT_GREEN_HEX: string = \"#6cba41\";\r\nconst global var COLOR_ORANGE_HEX: string = \"#ffa908\";\r\nconst global var COLOR_SOFT_ORANGE_HEX: string = \"#c8983d\";\r\nconst global var COLOR_YELLOW_HEX: string = \"#ffee0e\";\r\nconst global var COLOR_SOFT_YELLOW_HEX: string = \"#cbc134\";\r\nconst global var COLOR_BLUE_HEX: string = \"#1da1f2\";\r\nconst global var COLOR_SOFT_BLUE_HEX: string = \"#3a7fab\";\r\nconst global var COLOR_VIOLET_HEX: string = \"#ae00fd\";\r\nconst global var COLOR_TURQUOISE_HEX: string = \"#00ff9d\";\r\nconst global var COLOR_WHITE_HEX: string = \"#FFFFFF\";\r\nconst global var COLOR_GRAY_HEX: string = \"#EDEDED\";\r\nconst global var COLOR_BLACK_HEX: string = \"#181818\";\r\n\r\nconst global var COLOR_LIST: string[] = [\"#ff1d1e\", \"#49cc00\", \"#ffa908\", \"#ffee0e\", \"#1da1f2\", \"#ae00fd\", \"#00ff9d\", \"#c13c3d\", \"#6cba41\", \"#c8983d\", \"#cbc134\", \"#3a7fab\"];\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+                "disabled": false,
+                "lastUpdated": 0.4189313708669882
+            },
+            {
+                "id": "3e3d6569-6c97-4643-a240-67cf5f78140e",
+                "name": "init",
+                "type": "INIT",
+                "code": "//\r\n// STRICTLY CONFIDENTIAL\r\n// Copyright 2026 ID Vision Software SL. All Rights Reserved.\r\n//\r\n\r\n\r\n///////////////////////////////////////////////////////////////////////////////////////////\r\n// Aquest script inicialitza alguns elements com variables d'acció, taules o interfícies //\r\n///////////////////////////////////////////////////////////////////////////////////////////\r\n\r\n\r\n//\r\n// Action variables\r\n//\r\n\r\npglobal var showSegmentations: boolean = true;\r\npglobal var showContours: boolean = true;\r\n\r\n\r\n//\r\n// Visu\r\n//\r\n\r\n\r\n// Pages\r\nVisu.production.display.clear();\r\nVisu.setCurrentPage(Visu.EPage.production);\r\nVisu.update();\r\n\r\n// Logos\r\nvar idvisionLogo = Ve.loadImage(LOGO_IDVISION_PATH, true);\r\nVisu.production.IDVisionLogo.setImage(\"idvision\", idvisionLogo);\r\nVisu.update();\r\n\r\n// Taules\r\n\r\n\r\n\r\n//\r\n// Interfaces\r\n//\r\n\r\n",
+                "disabled": false,
+                "lastUpdated": 0.0285635391045298
+            },
+            {
+                "id": "cbf23762-98b3-4f76-accf-082043560c03",
+                "name": "init_cameras",
+                "type": "INIT",
+                "code": "//\r\n// STRICTLY CONFIDENTIAL\r\n// Copyright 2026 ID Vision Software SL. All Rights Reserved.\r\n//\r\n\r\n\r\n//////////////////////////////////////////////////////////////\r\n// Aquest script initcialitza els paràmetres de les càmeres //\r\n//////////////////////////////////////////////////////////////",
+                "disabled": false,
+                "lastUpdated": 0.10563744296273958
+            },
+            {
+                "id": "97b8c24f-3aef-460c-848b-fafa236b895a",
+                "name": "run",
+                "type": "SIMPLE",
+                "code": "//\r\n// STRICTLY CONFIDENTIAL\r\n// Copyright 2026 ID Vision Software SL. All Rights Reserved.\r\n//\r\n\r\n\r\n///////////////////////////////////////////////////\r\n// Aquest script controla la sequència principal //\r\n///////////////////////////////////////////////////\r\n\r\n\r\nvar captureTimeInit = -1;\r\nvar captureTime = -1;\r\nvar processTimeInit = -1;\r\nvar processTime = -1;\r\nvar cycleTimeInit = -1;\r\nvar cycleTime = -1;\r\n\r\nvar captureBlock = new CaptureBlock();\r\nvar processBlock = new ProcessBlock();\r\n\r\nvar image = new Ve.Image();\r\nvar capture = new Capture(image);\r\n\r\nvar result: string = \"Unknown\";\r\n\r\nvar state: number = 0;\r\n\r\n\r\nwhile (true) {\r\n\r\n    if (state == 0) {   // Init\r\n\r\n        // Reset variables\r\n        image = new Ve.Image();\r\n        capture = new Capture(image);\r\n        result = \"Unknown\";\r\n\r\n        // Calcular cycle time\r\n        if (cycleTimeInit != -1) {\r\n            cycleTime = time() - cycleTimeInit;\r\n        }\r\n        cycleTimeInit = time();\r\n\r\n        state = 100;\r\n \r\n    } else if (state == 100) {     // Capturar imatges\r\n\r\n        captureTimeInit = time();\r\n\r\n        captureBlock.runWait();\r\n        image = captureBlock.image;\r\n        \r\n        captureTime = time() - captureTimeInit;\r\n\r\n        if (!ONLY_CAPTURE_IMAGES) {\r\n            state = 200;\r\n        } else if (ONLY_CAPTURE_IMAGES) {\r\n            capture = new Capture(image);\r\n            state = 400;\r\n        }\r\n\r\n    } else if (state == 200) {     // Processar imatge\r\n\r\n        processBlock.image = image;\r\n        processBlock.runWait();\r\n\r\n        capture = processBlock.capture;\r\n        result = processBlock.result;\r\n\r\n        state = 300;\r\n\r\n    } else if (state == 300) {     // Enciar comunicacions\r\n    \r\n    \r\n        state = 400;\r\n\r\n    } else if (state == 400) {     // Mostrar al Visu\r\n\r\n        Visu.production.display.sendCapture(capture);\r\n        Visu.update();\r\n\r\n        state = 500;\r\n\r\n    } else if (state == 500) {     // Guardar al MES\r\n\r\n        var unit = new Unit();\r\n        capture.setName(\"Capture\");\r\n        unit.addCapture(capture);\r\n        unit.addResult(\"Result\", result);\r\n\r\n        Mes.addUnit(unit);\r\n\r\n        state = 0;\r\n    }\r\n}",
+                "disabled": false,
+                "lastUpdated": 0.8869490620198182
+            },
+            {
+                "id": "6a937cc8-d42c-4bdb-8222-8446e9801d7b",
+                "name": "capture",
+                "type": "SIMPLE",
+                "code": "//\r\n// STRICTLY CONFIDENTIAL\r\n// Copyright 2026 ID Vision Software SL. All Rights Reserved.\r\n//\r\n\r\n\r\n/////////////////////////////////////////////////\r\n// Aquest script controla la captura d'imatges //\r\n/////////////////////////////////////////////////\r\n\r\n\r\nglobal var debugImageIndex: number = 0;\r\n\r\n\r\nblock CaptureBlock {\r\n\r\n    out var image: Ve.Image = new Ve.Image();\r\n\r\n    if (!DEBUG) {\r\n\r\n        Cameras.camera1.waitImage(-1);\r\n        image = Cameras.camera1.getImage();\r\n\r\n\r\n    } else if (DEBUG) {\r\n\r\n        waitTime(DEBUG_IMAGES_CYCLE_TIME);\r\n        \r\n        var debugPath = DEBUG_IMAGES_DIR;\r\n        var debugImages = Fs.listImages(debugPath);\r\n        if (debugImageIndex == debugImages.length) {\r\n            debugImageIndex = 0;\r\n            // stop();\r\n        }\r\n        image = Ve.loadImage(debugPath + \"/\" + debugImages[debugImageIndex]);\r\n        debugImageIndex++;\r\n    }\r\n}\r\n\r\n",
+                "disabled": false,
+                "lastUpdated": 0.5626274831815801
+            },
+            {
+                "id": "596ebf43-0c9f-44c3-86ab-34ebfc1133f3",
+                "name": "process",
+                "type": "SIMPLE",
+                "code": "//\r\n// STRICTLY CONFIDENTIAL\r\n// Copyright 2026 ID Vision Software SL. All Rights Reserved.\r\n//\r\n\r\n\r\n///////////////////////////////////////////////////////////\r\n// Aquest script controla el processament de les imatges //\r\n///////////////////////////////////////////////////////////\r\n\r\n\r\nblock ProcessBlock {\r\n\r\n    in var image: Ve.Image;\r\n\r\n    out var capture: Capture;\r\n    out var result: string;\r\n\r\n    capture = new Capture(image);\r\n\r\n    // Inferència del brain\r\n    var resizedImage = Ve.resizeImage(image, BRAIN_IMAGE_WIDTH, BRAIN_IMAGE_HEIGHT);\r\n    resizedImage = Ve.convertImage(resizedImage, Ve.EPixelFormat.Mono8);\r\n\r\n    var defectSegmentation = new Ve.Image();\r\n    defectSegmentation = Brains.top_defects_detection.inference(resizedImage).defecte_cap;\r\n\r\n    defectSegmentation = Ve.resizeImage(defectSegmentation, image.width(), image.height());\r\n\r\n    // Find countours\r\n    var contours = Ve.findContoursImage(defectSegmentation, 0.5, 100);\r\n    var defectContours: Ve.Shape2d[] = [];\r\n    if (contours.length > 0) {\r\n        for (var i = 0; i < contours.length; i++) {\r\n            contours[i].name = \"Defect Contour \" + i;\r\n            contours[i].lineColor = COLOR_RED_HEX;\r\n            defectContours.push(contours[i]);\r\n        }\r\n\r\n        // Afegir elements a la captura\r\n        if (showSegmentations) {\r\n            capture.addVisionElement(defectSegmentation, \"Defects Segmentation\");\r\n        }\r\n        if (showContours) {\r\n            capture.addVisionElement(defectContours, \"Defect Contours\");\r\n        }\r\n\r\n        result = \"NOK\";\r\n\r\n    } else {\r\n        result = \"OK\";\r\n    }\r\n    \r\n}",
+                "disabled": false,
+                "lastUpdated": 0.5563853967036141
+            },
+            {
+                "id": "defb1c98-4e18-447a-b57f-55ba565e77e9",
+                "name": "end",
+                "type": "END",
+                "code": "//\r\n// STRICTLY CONFIDENTIAL\r\n// Copyright 2026 ID Vision Software SL. All Rights Reserved.\r\n//\r\n\r\n\r\n//////////////////////////////////////////////////////////////////////\r\n// Aquest script finalitza algunes tasques com la captura d'imatges //\r\n//////////////////////////////////////////////////////////////////////\r\n\r\nif (!DEBUG) {\r\n    Cameras.camera1.stopAcquisition();\r\n    Cameras.camera1.clearOutputBuffer();\r\n}",
+                "disabled": false,
+                "lastUpdated": 0.17749741072367686
+            }
+        ],
+        "panelActions": [
+            {
+                "name": "Show Segmentation",
+                "actionType": "toggle",
+                "color": "06A0D4",
+                "variableName": "showSegmentations",
+                "minimumAccessLevel": 0,
+                "variableType": "boolean",
+                "groupId": "",
+                "lastUpdated": 0.002051879430577941
+            },
+            {
+                "name": "Show Contours",
+                "actionType": "toggle",
+                "color": "06A0D4",
+                "variableName": "showContours",
+                "minimumAccessLevel": 0,
+                "variableType": "boolean",
+                "groupId": "",
+                "lastUpdated": 0.45042055387267155
+            }
+        ],
+        "results": [
+            {
+                "name": "Result",
+                "type": "string",
+                "lastUpdated": 0.26633205632758217
+            }
+        ],
+        "configKey": "f6165e61-e44c-4db8-bf52-15eef25e3367"
+    },
+    "parameters": {
+        "paramsConfig": {
+            "name": "Parameters",
+            "type": "node_element",
+            "uuid": "",
+            "access": "NONE",
+            "childs": {},
+            "description": "Configuration of the parameters",
+            "comment": "",
+            "format": "default",
+            "friendly_id": "",
+            "hidden": false,
+            "position": -1
+        },
+        "configKey": "a4edf345-bfc6-4804-97e0-29d6bf3d537e"
+    }
+}
